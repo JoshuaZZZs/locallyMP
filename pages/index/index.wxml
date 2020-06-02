@@ -1,13 +1,21 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<swiper class="slides" autoplay="true" indicator-dots="true">
+<!-- 
+swiper(轮播图):
+autoplay:自动播放
+mode="aspectFill" 图片自动充满后裁剪其他部分
+-->
+<swiper-item wx:for="{{slidesData}}" wx:key="index">
+  <navigator wx:if="{{item.link}}" url="{{item.link}}"> 
+  <image mode="aspectFill" src="{{item.image}}"/>
+  </navigator>
+    <image wx:else mode="aspectFill" src="{{item.image}}"/>
+</swiper-item>
+</swiper>
+<!--首页菜单-->
+<view class="grids">
+  <navigator url="/pages/list/list?cat={{item.id}}" class="item" wx:for="{{menuData}}" wx:key="index">
+  <image src="{{item.icon}}"></image>
+  <text>{{item.name}}</text>
+  </navigator>
 </view>
+

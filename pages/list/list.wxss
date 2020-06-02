@@ -1,0 +1,10 @@
+/* pages/list/list.wxss */
+.search{
+  text-align: center;
+}
+.search input{
+  margin: 10rpx;
+  background: #fff;
+  border-radius: 7rpx;
+  width: 50%;
+}

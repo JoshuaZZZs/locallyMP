@@ -1,21 +1,32 @@
-/**index.wxss**/
-.userinfo {
+.slides image{
+  width: 750rpx;
+  height: 272rpx;
+}
+ .grids{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+  border-left: 1rpx solid #ccc;
+}
+ .grids .item{
+  height: 260rpx;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-basis: 33.33%;
+  box-sizing: border-box;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  padding: 40rpx;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.grids .item image{
+  width: 75rpx;
+  height: 75rpx;
+  margin-bottom: 10rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.grids .item text{
+  font-size: 14px;
+  font-family: "微软雅黑";
 }

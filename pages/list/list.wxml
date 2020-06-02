@@ -1,0 +1,9 @@
+<!--pages/list/list.wxml-->
+<view class="search">
+  <input>
+  <view class="icon-box-ctn"></view>
+  </input>
+</view>
+<view class="list">
+
+</view>
