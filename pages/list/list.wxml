@@ -1,9 +1,21 @@
 <!--pages/list/list.wxml-->
+<view class="headers">
 <view class="search">
-  <input>
-  <view class="icon-box-ctn"></view>
+ <input placeholder="搜索" placeholder-class="placeholder_text" type="text" confirm-type="done">  
   </input>
+  <icon class="icon-small search_icon" type="search" size="14"></icon></view> 
 </view>
 <view class="list">
-
+<view wx:for="{{listData}}" wx:key="index" class="shop_items">
+<view class="item_image">
+<image mode="aspectFit" src="{{item.images[0]}}"  lazy-load="true"/>
+</view>
+<view class="item_content">
+<view class="name">{{item.name}}</view>
+<view class="phone"><text class="label">电话：</text> {{item.phone}}</view>
+<view class="adress"><text class="label">地址：</text> {{item.address}}</view>
+<view class="business_hours"><text class="label">营业时间：</text> {{item.businessHours}}</view>
+</view>
+<view class="score"><text>{{item.score}}</text> </view>
+</view>
 </view>
