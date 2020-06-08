@@ -1,0 +1,69 @@
+/* pages/detail/detail.wxss */
+.detail_swiper {
+  width: 750rpx;
+  height: 420rpx;
+}
+.shop_info{
+  border-bottom: 1rpx solid #ccc;
+  background: #fff;
+  padding: 15rpx;
+  height: 200rpx;
+  justify-content: space-between;
+  margin-bottom: 28rpx;
+}
+.shop_info>view{
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+ .shop_info .name{
+ font-size: 34rpx;
+} 
+.list .shop_items .item_image{
+  height: 200rpx;
+}
+.detail_swiper image{
+width:750rpx;
+}
+.comments{
+  background: #fff;
+  padding: 20rpx;
+ 
+}
+.comments .comments_items{
+border-bottom: 1px solid #ccc;
+padding-bottom: 10rpx;
+margin-bottom: 10rpx;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.title .info{
+  text-align: right;
+  font-size: 28rpx;
+}
+.title .info .date{
+  color: #ccc;
+  font-size: 24rpx;
+}
+.title .info .rate{
+  padding: 1rpx 5rpx;
+border-radius: 48rpx;
+color: #fff;
+font-size: 20rpx;
+background: red;
+  display: inline-block;
+}
+.comments .comments_items .content{
+  font-size: 26rpx;
+}
+.comments .images image{
+  width: 110rpx;
+  height: 110rpx;
+  margin: 10rpx;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "locallymp",
+  "version": "1.0.0",
+  "description": "模仿美团类的微信小程序",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaZZZs/locallyMP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshuaZZZs/locallyMP/issues"
+  },
+  "homepage": "https://github.com/JoshuaZZZs/locallyMP#readme",
+  "dependencies": {
+    "weui-miniprogram": "^1.0.3"
+  },
+  "devDependencies": {}
+}

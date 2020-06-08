@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
-  "onReachBottomDistance":0
+  "onReachBottomDistance":0,
+  "enablePullDownRefresh": true,
+
+  "usingComponents": {
+   "loading":"../../miniprogram_npm/weui-miniprogram/loading/loading"
+  }
 }

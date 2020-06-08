@@ -75,3 +75,7 @@
 .list .shop_items .item_content>view>text{
 color: #ccc;
 }
+.loading{
+  text-align: center;
+  color: #ccc;
+}

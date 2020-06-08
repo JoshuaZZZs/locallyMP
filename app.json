@@ -3,14 +3,16 @@
     "pages/index/index",
     "pages/profile/profile",
     "pages/new/new",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/detail/detail"
   ],
   "window":{
-    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "本地宝",
     "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle":"dark",
+    "backgroundColorTop":"#f0f0f0"
   },
   "tabBar":{
     "selectedColor": "#ccc",
@@ -38,5 +40,7 @@
     ]
   },
   "style": "v2",
+  "enablePullDownRefresh":false,
   "sitemapLocation": "sitemap.json"
+
 }
