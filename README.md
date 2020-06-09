@@ -16,7 +16,7 @@
   - 功能菜单：展示当前应用可用的全部细分功能模块，用户可点击模块进入对应商铺列表
   - 导航栏:用户通过此切换对应功能页面，由于只是作为第一个熟悉小程序的项目，所以只完成了首页的功能
   - 详情展示(当前测试机型为iphone7/8p，但采用了响应式布局且经过测试后其他机型依旧适配)：
-    ![](\readmeImage\home.jpg)
+    ![](/readmeImage/home.jpg)
   - 
 
 - #### 列表页
@@ -26,20 +26,23 @@
   - 商铺列表:用于展示相应的商铺信息，同时加入了下拉刷新和上拉加载更多的功能
 
   - 主界面:
-   ![](\readmeImage\list.jpg)
+  
+  - ![](/readmeImage/list.jpg)
 
   - 搜索:
-    ![](\readmeImage\search.jpg)
+  
+   - ![](/readmeImage/search.jpg)
 
     
 
   - 下拉刷新和上拉加载更多:
-  ![](\readmeImage\refresh.jpg)
+  
+  - ![](/readmeImage/refresh.jpg)
   	
   	
   	
 
-  ![](\readmeImage\loading.jpg)
+  - ![](/readmeImage/loading.jpg)
 
 - #### 详情页
 
@@ -50,19 +53,18 @@
 	- 评论:用于展示商铺的评论信息
   
 	- 主界面:
-    ![](\readmeImage\detail.jpg)
+   	- ![](/readmeImage/detail.jpg)
 	
 	  
 	
 	- 评论:
-	  ![](\readmeImage\comments.jpg)
+	- ![](/readmeImage/comments.jpg)
 	
 	  
 	
 	- 查看评论图片:
-	  ![](\readmeImage\comments_image.jpg)
+	- ![](/readmeImage/comments_image.jpg)
 	
-	- 
 
 ## 项目结构
 
@@ -85,5 +87,5 @@ utils:存放项目所需的工具
 
 utils->fetch:封装的请求函数
 
-![](\readmeImage\object.jpg)
+![](/readmeImage/object.jpg)
 
