@@ -11,6 +11,9 @@ mode="aspectFill" 图片自动充满后裁剪其他部分
 </swiper>
 <view class="">
 </view>
+<!-- 
+	商铺基本信息
+ -->
 <view class="shop_info">
 	<view class="name">{{pageInfo.name}}</view>
 	<view class="phone"><text class="label">电话：</text> {{pageInfo.phone}}</view>
@@ -18,7 +21,9 @@ mode="aspectFill" 图片自动充满后裁剪其他部分
 	<view class="tags" wx:if="{{pageInfo.tags.length}}"><text class="label">标签：</text> <text wx:for="{{pageInfo.tags}}" wx:key="index">{{item}}</text></view>
 	<view class="business_hours"><text class="label">营业时间：</text> {{pageInfo.businessHours}}</view>
 </view>
-
+<!-- 
+	用户评价
+ -->
 <view class="comments" wx:if="{{pageInfo.comments.length}}">
 	<view wx:for="{{pageInfo.comments}}" wx:key="index" class="comments_items">
 		<view class="title">
@@ -27,7 +32,6 @@ mode="aspectFill" 图片自动充满后裁剪其他部分
 				<view class="rate">{{utils.rateExc(item.rating)}}</view>
 				<view class="date">{{item.date}}</view>
 			</view>
-
 		</view>
 		<view class="content">{{item.content}}
 		<view class="images" bindtap="readDetail"  data-src="123" data-images="{{item.images}}">
@@ -36,8 +40,13 @@ mode="aspectFill" 图片自动充满后裁剪其他部分
 		</view>
 	</view>
 </view>
+<!-- 页面局部定义的特殊函数 
+ imageExc：页面局部定义的特殊函数
+ 去除字段中显示的%
+   -->
 <wxs module="utils">
 	module.exports = {
+	
 		imageExc: function(input) {
 			return input.replace('w.h', '100.100')
 		},

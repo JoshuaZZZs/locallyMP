@@ -16,6 +16,7 @@ Page({
     //页面初始数据
     pageNo:1,
     pageSize:15,
+    //搜索关键字
     query:''
   },
   /**
@@ -25,6 +26,7 @@ Page({
     this.getPageInfo(options)
   },
   onReady() {
+    //页面数据完成时设置页面名称
     if (this.data.pageInfo.name) {
       wx.setNavigationBarTitle({
         title: this.data.pageInfo.name,
@@ -44,6 +46,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    // 重置页面所有信息
     this.setData({
       listData: [],
       //是否还有更多数据
@@ -57,6 +60,7 @@ Page({
       wx.stopPullDownRefresh()
     )
   },
+  //用户搜索函数
 search(e){
   this.setData({
     listData: [],
@@ -70,6 +74,7 @@ search(e){
   this.setData({query:e.detail.value})
   this.getListData()
 },
+//获取页面信息
   getPageInfo(options) {
     app.fetch(`/categories/${options.cat}`).then(res => {
       this.setData({
@@ -81,6 +86,7 @@ search(e){
       this.getListData(options)
     })
   },
+  //获取列表信息
   getListData(options=this.data.pageInfo) {
     
     this.setData({isLoading:true})

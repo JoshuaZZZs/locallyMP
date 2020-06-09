@@ -1,4 +1,4 @@
-// pages/detail/detail.js
+
 const app=getApp()
 Page({
 
@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //页面信息数据
     pageInfo:{}
   },
 
@@ -13,31 +14,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     this.getPageInfo(options)
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
+//获取页面所有信息
   getPageInfo(options){
     app.fetch(`/shops/${options.id}`).then(res=>{
       this.setData({
@@ -48,6 +29,7 @@ Page({
       })
     })
   },
+  //点击图片时新页面打开图片
   readDetail (e) {
     wx.previewImage({
       current: '',

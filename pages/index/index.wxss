@@ -1,16 +1,19 @@
+/* 轮播图 */
 .slides image{
   width: 750rpx;
   height: 272rpx;
 }
+/* 菜单按钮 */
  .grids{
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
   border-top: 1rpx solid #ccc;
   border-left: 1rpx solid #ccc;
+  height: 76.7%;
 }
  .grids .item{
-  height: 260rpx;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

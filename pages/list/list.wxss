@@ -1,8 +1,7 @@
 /* pages/list/list.wxss */
-.search{
-  text-align: center;
-}
+/* 搜索框 */
 .search {
+  text-align: center;
   display: flex;
   align-items: center;
   width: 60%;
@@ -24,6 +23,7 @@
  .search  .search_icon{
   font-size: 27rpx;
 } 
+/* 列表 */
 .list{
   background: #fff;
 }
@@ -75,7 +75,4 @@
 .list .shop_items .item_content>view>text{
 color: #ccc;
 }
-.loading{
-  text-align: center;
-  color: #ccc;
-}
+

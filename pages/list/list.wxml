@@ -1,11 +1,13 @@
 <!--pages/list/list.wxml-->
 <view class="headers">
+<!-- 搜索框 -->
 	<view class="search">
 		<input placeholder="搜索" placeholder-class="placeholder_text"  bindconfirm="search" value="{{query}}" type="text" confirm-type="done">
 		</input>
 		<icon class="icon-small search_icon" type="search" size="14"></icon>
 	</view>
 </view>
+<!-- 列表 -->
 <view class="list">
 	<navigator url="../detail/detail?id={{item.id}}"  wx:for="{{listData}}" wx:key="index" class="shop_items">
 		<view class="item_image">
@@ -20,5 +22,6 @@
 		<view class="score"><text>{{item.score}}</text> </view>
 	</navigator>
 </view>
+<!-- 下拉时对应显示组件 -->
 <loading wx:if="{{hasMore}}" type="circle" ext-class="loading" class="loading_more ">加载中</loading>
 <view wx:elif="{{!hasMore&&!isLoading}}}" ext-class="loading"  class="weui-loadmore ">客官 我是有底线的~</view>

@@ -1,8 +1,12 @@
-/* pages/detail/detail.wxss */
+/* 页面轮播图 */
 .detail_swiper {
   width: 750rpx;
   height: 420rpx;
 }
+.detail_swiper image{
+  width:750rpx;
+  }
+/* 商铺信息 */
 .shop_info{
   border-bottom: 1rpx solid #ccc;
   background: #fff;
@@ -23,9 +27,7 @@
 .list .shop_items .item_image{
   height: 200rpx;
 }
-.detail_swiper image{
-width:750rpx;
-}
+/* 用户评价 */
 .comments{
   background: #fff;
   padding: 20rpx;
